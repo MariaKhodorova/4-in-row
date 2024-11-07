@@ -39,7 +39,7 @@ class Game:
         # Простая оценка: чем больше фишек у первого игрока, тем лучше
         return count[0] * 10 - count[1] * 10
 
-    # Функция для альфа-бета обрезки (реализация упрощена для демонстрации)
+    # Функция для альфа-бета процедуры
     def alpha_beta(self, depth, alpha, beta, maximizing_player):
         if depth == 0 or self.game_over:
             return self.evaluate_board()
